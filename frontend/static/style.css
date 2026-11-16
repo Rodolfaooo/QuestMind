@@ -1,0 +1,46 @@
+/* ================================
+   Classes
+================================ */
+
+.btn-purple:hover {
+  background-color: #6610f2;
+}
+
+.btn-background-purple {
+    background-color: #6610f2;
+    color: rgb(255, 255, 255);
+}
+
+/* ================================
+   Elementos sobre.html
+================================ */
+
+#btn-return {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 9999;
+}
+
+/* ================================
+   Elementos _navAside.html
+================================ */
+
+#col-aside {
+  height: 100vh;
+}
+
+#col-aside-content {
+  width: 11vh; 
+  border-right: blueviolet solid 2px; 
+  align-items: center;
+}
+
+/* ================================
+   Elementos Gerais
+================================ */
+
+h1 {
+  border-bottom: 1px solid blueviolet;
+  padding: 10px 10px 10px 0px;
+}

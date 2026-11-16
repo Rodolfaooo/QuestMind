@@ -1,0 +1,26 @@
+{% load static %}
+
+<div id="col-aside" class="container-fluid px-0">
+    <div id="col-aside-content" class="col d-flex flex-column h-100">
+        <a href="./sobre.html">
+            <img src="{% static 'images/image.svg' %}" alt="Logo" style="width: 10vh;">
+        </a>
+
+        <button type="button" class="btn boder-0 p-0 mt-2 btn-purple">
+            <a href="./">
+                <img src="{% static 'images/pencil-svgrepo-com.svg' %}" alt="Questões" class="d-block w-100">
+            </a>
+        </button>
+        <button type="button" class="btn border-0 p-0 mt-2 btn-purple">
+            <a href="./notas.html">
+                <img src="{% static 'images/book-svgrepo-com.svg' %}" alt="Anotações" class="d-block w-100">
+            </a>
+        </button>
+        <button type="button" class="btn border-0 p-0 mt-2 btn-purple">
+            <img src="{% static 'images/sun-2-svgrepo-com.svg' %}" alt="Modo claro/escuro" class="w-100">
+        </button>
+        <button type="button" class="btn p-0 mb-1 border-0 btn-purple mt-auto">
+            <img src="{% static 'images/gear-svgrepo-com.svg' %}" alt="Configuração" class="d-block w-100">
+        </button>
+    </div>
+</div>
