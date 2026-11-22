@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-        <!-- Responsive Viewport -->
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'base.html' %}
 
-    {% include './partials/_linkHeader.html' %}
+{% block title %}QuestMind{% endblock %}
 
-    <title>QuestMind</title>
+{% block content %}
+{% load static %}
+    <div class="flex justify-center min-h-screen w-full ml-10">
+        <div class="flex mt-auto mb-4 bg-gray-500  border-2 border-gray-700 focus-within:border-purple-600
+        transition-colors rounded-[10px] items-center field-sizing-content max-h-35 overflow-y-auto">
+            <textarea name="question" class="h-10 m-1.5 p-2 w-150 rounded-[10px] appearance-none 
+            outline-none resize-none border-none bg-transparent text-black field-sizing-content max-h-35
+            h-auto overflow-y-auto"
+                id="question" placeholder="Digite o conteúdo aqui..."></textarea>
 
-</head>
-<body>
-    {% include './partials/_navAside.html' %}
-
-
-    {% include './partials/_linkJs.html' %}
-</body>
-</html>
+            <button type="button" class="w-8 h-8 rounded-[10px] border-2 hover:bg-gray-600
+             flex justify-center items-center m-1.5 mb-2 self-end">
+                <img src="{% static 'images/setting-config-svgrepo-com.svg' %}" alt="Adicionar" 
+                class="w-6 h-6 m-1">
+            </button>
+        </div>
+    </div>
+{% endblock %}

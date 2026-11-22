@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-        <!-- Responsive Viewport -->
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'base.html' %}
 
-    {% include './partials/_linkHeader.html' %}
+{% block title %}QuestMind - Notas{% endblock %}
 
-    <title>QuestMind - Notas</title>
-</head>
-<body>
-    {% include './partials/_navAside.html' %}
+{% block content %}
+    <div class="m-2 flex ml-12">
+        <div>
+            <div class="w-180 h-100 border-2 border-black dark:border-gray-500 rounded-[10px] bg-purple-500
+            dark:bg-purple-800 transition-colors">
+                <span class="m-1.5 dark:text-gray-300">Notas</span>
+                <textarea class="w-full h-93 rounded-b-[10px] outline-none resize-none bg-gray-200 p-1.5
+                border-t-2 border-black dark:border-gray-500 dark:bg-gray-900 dark:text-gray-300"
+                name="notas" id="notas" placeholder="Digite suas anotações aqui..."></textarea>
+            </div>
+    
+            <div id="explicacao" class="h-57 border-2 border-black dark:border-gray-500 rounded-[10px] mt-1 p-1.5">
+                <p class="dark:text-gray-300">Explicação</p>
+            </div>
+        </div>
 
-    {% include './partials/_linkJs.html' %}
-</body>
-</html>
+        <div id="perguntas" class="h-full ml-1 border-2 border-black dark:border-gray-500 rounded-[10px] w-137 p-1.5">
+            <p class="dark:text-gray-300">Perguntas</p>
+        </div>
+    </div>
+{% endblock %}

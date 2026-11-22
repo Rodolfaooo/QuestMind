@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .span-sidebar {
+        @apply opacity-0 transition-opacity duration-200 ml-1 dark:text-gray-300;
+    }
+
+    .img-sidebar-light {
+        @apply w-7 block dark:hidden;
+    }
+
+    .img-sidebar-dark {
+        @apply w-7 hidden dark:block;
+    }
+
+    .button-sidebar {
+        @apply bg-gray-300 dark:bg-gray-800 hover:bg-purple-500 dark:hover:bg-purple-800 rounded-[5px] items-center;
+    }
+
+    .button-sidebar-length {
+        @apply mt-2 ml-1 mr-1;
+    }
+};

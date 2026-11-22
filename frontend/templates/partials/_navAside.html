@@ -1,26 +1,39 @@
 {% load static %}
 
-<div id="col-aside" class="container-fluid px-0">
-    <div id="col-aside-content" class="col d-flex flex-column h-100">
-        <a href="./sobre.html">
-            <img src="{% static 'images/image.svg' %}" alt="Logo" style="width: 10vh;">
+<aside id="sidebar" class="w-10 min-h-screen border-r-2 border-purple-500 dark:border-purple-800 
+dark:bg-gray-900 fixed bg-gray-200 overflow-hidden transition-all duration-500 ease-in-out">
+    <div id="sidebar-elements" class="flex flex-col min-h-screen">
+        <a href="./sobre.html" class="w-12">
+            <img src="{% static 'images/image.svg' %}" alt="Logo" class="ml-[-5px]">
         </a>
 
-        <button type="button" class="btn boder-0 p-0 mt-2 btn-purple">
-            <a href="./">
-                <img src="{% static 'images/pencil-svgrepo-com.svg' %}" alt="Questões" class="d-block w-100">
+        <button type="button" class="button-sidebar button-sidebar-length">
+            <a href="./" class="flex flex-row items-center">
+                <img src="{% static 'images/pencil-svgrepo-com.svg' %}" alt="Questões" class="img-sidebar-light">
+                <img src="{% static 'images/pencil-svgrepo-com(3).svg' %}" alt="Anotações" class="img-sidebar-dark">
+                <span class="sidebar-text span-sidebar">Conversa</span>
             </a>
         </button>
-        <button type="button" class="btn border-0 p-0 mt-2 btn-purple">
-            <a href="./notas.html">
-                <img src="{% static 'images/book-svgrepo-com.svg' %}" alt="Anotações" class="d-block w-100">
+        <button type="button" class="button-sidebar button-sidebar-length">
+            <a href="./notas.html" class="flex flex-row items-center">
+                <img src="{% static 'images/book-svgrepo-com.svg' %}" alt="Anotações" class="img-sidebar-light">
+                <img src="{% static 'images/book-svgrepo-com(2).svg' %}" alt="Anotações" class="img-sidebar-dark">
+                <span class="sidebar-text span-sidebar">Notas</span>
             </a>
         </button>
-        <button type="button" class="btn border-0 p-0 mt-2 btn-purple">
-            <img src="{% static 'images/sun-2-svgrepo-com.svg' %}" alt="Modo claro/escuro" class="w-100">
+        <button type="button" id="theme-toggle" class="button-sidebar button-sidebar-length">
+            <div class="flex flex-row items-center">
+                <img src="{% static 'images/sun-2-svgrepo-com.svg' %}" alt="Modo claro" class="img-sidebar-light">
+                <img src="{% static 'images/moon-stars-svgrepo-com(1).svg' %}" alt="Modo escuro" class="img-sidebar-dark">
+                <span class="sidebar-text span-sidebar">Tema</span>
+            </div>
         </button>
-        <button type="button" class="btn p-0 mb-1 border-0 btn-purple mt-auto">
-            <img src="{% static 'images/gear-svgrepo-com.svg' %}" alt="Configuração" class="d-block w-100">
+        <button type="button" class="button-sidebar mt-auto mb-2 ml-1 mr-1">
+           <div class="flex flex-row items-center">
+               <img src="{% static 'images/gear-svgrepo-com.svg' %}" alt="Configuração" class="img-sidebar-light">
+               <img src="{% static 'images/gear-svgrepo-com(2).svg' %}" alt="Configuração" class="img-sidebar-dark">
+               <span class="sidebar-text span-sidebar">Configurações</span>
+           </div>
         </button>
     </div>
-</div>
+</aside>

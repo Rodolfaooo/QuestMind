@@ -1,29 +1,37 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-        <!-- Responsive Viewport -->
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% include './partials/_linkHeader.html' %}
 
     <title>QuestMind - Sobre</title>
 </head>
-<body>
-    <div class="container col-7 align-items-center text-justify" >
-        <h1>QuestMind</h1>
+<body class="flex justify-center min-h-screen bg-gray-200 dark:bg-gray-900 transition-colors">
+    <a href="./" class="fixed top-4 left-4 bg-purple-500 dark:bg-purple-800 p-2 rounded-[5px] hover:bg-purple-600 transition-colors">
+            <p class="dark:text-gray-300">Retornar</p>
+    </a>
+
+    <button type="button" id="theme-toggle" class=" fixed top-4 left-28 w-10 bg-purple-500 dark:bg-purple-800 rounded-[5px] items-center
+    transition-colors cursor-pointer p-1">
+            <img src="{% static 'images/sun-2-svgrepo-com.svg' %}" alt="Modo claro" class="block dark:hidden">
+            <img src="{% static 'images/moon-stars-svgrepo-com(1).svg' %}" alt="Modo escuro" class="hidden dark:block">
+    </button>
+
+    <div class="w-200 items-center flex flex-col">
+        <h1 class="text-4xl p-2 w-full border-b-2 border-purple-500 dark:border-purple-800
+        dark:text-gray-300">QuestMind</h1>
     
-        <p>
-            Bem-vindo ao QuestMind! Está página tem como o objetivo apresentar informações sobre o projeto.
+        <p class="content-justify mt-2 text-justify dark:text-gray-300">
+            Bem-vindo ao QuestMind! Esta página tem como objetivo apresentar informações sobre o projeto.
             Tanto na questão de usabilidade, quanto na questão de desenvolvimento. O projeto foi desenvolvido
             com o intuito de auxiliar estudantes a organizar suas anotações e questões de estudo, proporcionando 
             uma experiência mais eficiente e prática.
         </p>
-    
-        <a href="./" id="btn-return" class="btn btn-background-purple text-white text-decoration-none">
-            Retornar
-        </a>
     </div>
+
 
     {% include './partials/_linkJs.html' %}
 </body>

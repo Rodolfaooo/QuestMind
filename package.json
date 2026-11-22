@@ -1,0 +1,24 @@
+{
+  "name": "questmind_v2",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <img src=\"frontend/static/images/image.svg\" width=225px alt=\"QuestMind\"> </div>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./frontend/static/css/input.css -o ./frontend/static/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./frontend/static/css/input.css -o ./frontend/static/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodolfaooo/QuestMind.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rodolfaooo/QuestMind/issues"
+  },
+  "homepage": "https://github.com/Rodolfaooo/QuestMind#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

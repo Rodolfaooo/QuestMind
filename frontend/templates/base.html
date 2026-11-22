@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    {% include './partials/_linkHeader.html' %}
+
+    <title>{% block title %}My title{% endblock %}</title>
+</head>
+<body class="bg-gray-200 dark:bg-gray-900 transition-colors">
+    <div class="flex">
+        {% include './partials/_navAside.html' %}
+    
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include './partials/_linkJs.html' %}
+</body>
+</html>
