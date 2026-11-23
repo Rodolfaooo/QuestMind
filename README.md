@@ -2,9 +2,18 @@
   <img src="frontend/static/images/image.svg" width=225px alt="QuestMind">
 </div>
 
-<h2>Descrição</h2>
+<h1 align="center">Bem vindo ao QuestMind!</h1>
+
 <p align="justify">
-  O objetivo deste projeto é desenvolver uma aplicação web com o intuito de aprender as linguagens utilizadas e como projetar um software do zero. Além disso, o sistema tem como finalidade gerar questões para o aprimoramento do conhecimento, focado inicialmente em ajudar nos estudos de cibersegurança.
+O QuestMind é um projeto desenvolvido com o propósito de explorar e compreender como uma aplicação web funciona por trás dos panos, desde a comunicação entre seus componentes até o processamento das informações.
+</p>
+
+<p align="justify">
+  Além disso, a aplicação oferece funcionalidades voltadas à otimização dos estudos, permitindo gerar questões personalizadas para testar seus conhecimentos e criar anotações para organizar o conteúdo estudado.
+</p>
+
+<p align="justify">
+  E não se preocupe com suas anotações: você poderá baixá-las para manter seus estudos sempre acessíveis!
 </p>
 
 <p align="justify">
@@ -18,6 +27,8 @@
 <p align="justify">
   O projeto continua em desenvolvimento e, a cada nova funcionalidade implementada, representa uma oportunidade de aprender, experimentar e consolidar meus conhecimentos em programação.
 </p>
+
+<br>
 
 <h2>Como utilizar</h2>
 
