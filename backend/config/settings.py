@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,8 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# Login
+
+LOGIN_URL = 'login'           # Nome da rota de login no urls.py
+LOGIN_REDIRECT_URL = 'index'  # Para onde vai após logar

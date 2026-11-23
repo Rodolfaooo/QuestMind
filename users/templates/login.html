@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>QuestMind - Login</title>
+</head>
+<body class="flex justify-center h-[100vh] items-center bg-gray-200"> {% csrf_token %}
+    <div class="w-100 bg-gray-300 rounded-[10px] p-2 shadow-xl">
+        <h1 class="m-1 mb-10 text-2xl w-auto text-center">Login</h1>
+        <form action="{% url 'login' %}" method="post" class="flex flex-col">
+            <span class="span-login">Username</span>
+            <input type="text" placeholder="Username..." name="username" class="input-login">
+            <span class="span-login">Password</span>
+            <input type="password" placeholder="Password..." name="password" class="input-login">
+            <div class="flex flex-row mt-5 items-center">
+                <a href="{% url 'cadastro' %}" class="bg-purple-500 p-1.5 rounded-[5px] mr-auto ml-1
+                hover:bg-purple-600">Cadastrar</a>
+                <input type="submit" value="Enviar" class="bg-purple-500 p-1.5 rounded-[5px] mr-1 
+                ml-auto cursor-pointer hover:bg-purple-600">        
+            </div>
+        </form>
+    </div>
+</body>
+</html>

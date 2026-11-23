@@ -22,4 +22,20 @@
     .button-sidebar-length {
         @apply mt-2 ml-1 mr-1;
     }
+
+    .input-login {
+        @apply border-2 border-purple-500 outline-none m-1 p-1 rounded-[5px] focus:border-purple-800;
+    }
+
+    .span-login {
+        @apply text-2xl m-1;
+    }
+
+    .input-cadastro {
+    @apply border-2 border-purple-500 outline-none m-1 p-1 rounded-[5px] focus:border-purple-800;
+    }
+
+    .span-cadastro {
+        @apply text-2xl m-1;
+    }
 };
