@@ -7,11 +7,11 @@
         @apply opacity-0 transition-opacity duration-200 ml-1 dark:text-gray-300;
     }
 
-    .img-sidebar-light {
+    .img-light {
         @apply w-7 block dark:hidden;
     }
 
-    .img-sidebar-dark {
+    .img-dark {
         @apply w-7 hidden dark:block;
     }
 

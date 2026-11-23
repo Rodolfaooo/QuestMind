@@ -9,10 +9,10 @@
 
     <title>QuestMind - Cadastro</title>
 </head>
-<body class="flex justify-center h-[100vh] items-center bg-gray-200"> {% csrf_token %}
+<body class="flex justify-center h-[100vh] items-center bg-gray-200">
     <div class="w-100 bg-gray-300 rounded-[10px] p-2 shadow-xl">
         <h1 class="m-1 mb-10 text-2xl w-auto text-center">Cadastrar</h1>
-        <form action="{% url 'cadastro' %}" method="post" class="flex flex-col">
+        <form action="{% url 'cadastro' %}" method="post" class="flex flex-col"> {% csrf_token %}
             <span class="span-cadastro">Username</span>
             <input type="text" placeholder="Username..." name="username" class="input-cadastro">
             <span class="span-cadastro">Email</span>

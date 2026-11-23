@@ -20,19 +20,37 @@
             <img src="{% static 'images/moon-stars-svgrepo-com(1).svg' %}" alt="Modo escuro" class="hidden dark:block">
     </button>
 
-    <div class="w-200 items-center flex flex-col">
+    <button type="button" id="letter-toggle" class="fixed top-4 left-41 w-10 bg-purple-500 dark:bg-purple-800 rounded-[5px] items-center
+    transition-colors cursor-pointer p-1">
+        <img src="{% static 'images/letter-english-a-svgrepo-com.svg' %}" alt="Letra maior modo claro" class="block dark:hidden">
+        <img src="{% static 'images/letter-english-a-svgrepo-com(1).svg' %}" alt="Letra maior modo escuro" class="hidden dark:block">
+    </button>
+
+    <div class="w-200 items-center flex flex-col items-start">
         <h1 class="text-4xl p-2 w-full border-b-2 border-purple-500 dark:border-purple-800
         dark:text-gray-300">QuestMind</h1>
     
-        <p class="content-justify mt-2 text-justify dark:text-gray-300">
+        <p class="big-text content-justify mt-2 text-justify dark:text-gray-300">
             Bem-vindo ao QuestMind! Esta página tem como objetivo apresentar informações sobre o projeto.
             Tanto na questão de usabilidade, quanto na questão de desenvolvimento. O projeto foi desenvolvido
             com o intuito de auxiliar estudantes a organizar suas anotações e questões de estudo, proporcionando 
             uma experiência mais eficiente e prática.
         </p>
+
+        <p class="big-text content-justify mt-2 text-justify dark:text-gray-300">
+            Abaixo você poderá ver algumas imagens das sessões tiradas ao percorrer a aplicação:
+        </p>
+
+        <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-xl mx-auto w-[95vh] mt-6
+        border-3 border-black dark:border-gray-500">
+            <img src="{% static 'images/carrossel/image(1).jpg' %}" alt="Slide 1" class="w-full object-cover shrink-0 snap-center">
+            <img src="{% static 'images/carrossel/image(2).jpg' %}" alt="Slide 2" class="w-full object-cover shrink-0 snap-center">
+            <img src="{% static 'images/carrossel/image(3).jpg' %}" alt="Slide 3" class="w-full object-cover shrink-0 snap-center">
+        </div>
     </div>
 
 
     {% include './partials/_linkJs.html' %}
+    <script src="{% static 'js/letter.js' %}"></script>
 </body>
 </html>
